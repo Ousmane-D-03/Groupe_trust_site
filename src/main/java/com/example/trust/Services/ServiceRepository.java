@@ -12,6 +12,5 @@ import com.example.trust.Programs.ProgramHighlight;
 public interface ServiceRepository extends JpaRepository<ServiceOffering, Long> {
   List<ServiceOffering> findByNameContaining(String keyword);
   Optional<ServiceOffering> findById(Long id);
-  List<ProgramHighlight> findByNextDateAfter(LocalDate date);
 
 }

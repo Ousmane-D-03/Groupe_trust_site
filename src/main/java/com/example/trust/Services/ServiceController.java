@@ -33,4 +33,11 @@ public class ServiceController {
           .orElse(ResponseEntity.notFound().build());
   }
 
+  //Ajouter un service
+  @PostMapping
+  public ServiceOffering create(@RequestBody ServiceOffering serviceOffering) {
+      return service.save(serviceOffering);
+  }
+
+
 }

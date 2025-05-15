@@ -1,6 +1,6 @@
 package com.example.trust.Medias;
 
-import org.apache.tomcat.util.http.parser.MediaType;
+import com.example.trust.Medias.MediaType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -20,7 +20,7 @@ public class MediaItem {
     private String url;
     
     @Enumerated(EnumType.STRING)
-    private MediaType type; // PHOTO ou VIDEO
+    private MediaType type;
 
     private String category; // ex : "Team Building", "Coaching"
     private boolean published;
